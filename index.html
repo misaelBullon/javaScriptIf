@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <title>Prueba de javaScript</title>
+
+</head>
+<body>
+   
+    <div id="lista">
+
+        <select name="list" id="list">
+            <option value="">Elija una opcion</option>
+            <option value="perro">Perro</option>
+            <option value="gato">Gato</option>
+            <option value="loro">Loro</option>
+            <option value="pez">Pez</option>
+        </select>
+    </div>
+    <div id="texto">
+        <p id="demo"></p>
+        <button onclick="changeColor('blue')" id="botonAzul">Azul</button> <!--Creo los botones y llamo a la funcion de js change color, pasandole como parametro el color-->
+        <button onclick="changeColor('red')" id="botonRojo">Rojo</button>
+    </div>
+    <div id="h">
+        <h1 id="hora"></h1>
+    </div>
+</body>
+<script src="main.js"></script>
+
+<!--
+<script>
+    let select = document.querySelector('select'); //almaceno select en una variable
+    let p = document.querySelector('p'); //almaceno p en una variable
+
+    select.addEventListener('change', setMascota);  //agrego el event listener en select esperando un change, y llamo a la funcion setMscota
+
+    function setMascota(){
+        const choice = select.value;  //Se asigna una constante a eleccion.value
+
+        if(choice === 'perro'){  //Podria ser reemplazada con switch y case
+            p.textContent = ' Usted elijio un ' + choice ;  //p.textContent agrega texto a la etiqueta p
+            console.log(choice);
+        }else if(choice === 'gato'){
+            p.textContent = ' Usted elijio un ' + choice ;   
+            console.log(choice);
+        }else if(choice === 'loro'){
+            p.textContent = ' Usted elijio un ' + choice ; 
+            console.log(choice);
+        }else{
+            p.textContent = ' Usted elijio un ' + choice ; 
+            console.log(choice);
+        }
+    }
+
+    function changeColor(newColor){    //Creo la funcion llamada en los <button>
+        var element = document.getElementById('demo'); //Busco el elemento con el id 'demo' y lo agrego a una variable
+        element.style.color = newColor;    //aplico style.color con el color pasado como parametro en los <button>
+    }
+</script>
+-->
+</html>

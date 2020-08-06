@@ -1,0 +1,29 @@
+#tiempo{
+    text-align: center;
+}
+#lista{
+    width: auto;
+    height: auto;
+    text-align: center;
+    margin: 1em;
+    padding: 1em;
+}
+#texto{
+    text-align: center;
+}
+#botonAzul{
+    background-color: blue;
+}
+#botonRojo{
+    background-color: red;
+}
+#h{
+    height: auto;
+    width: auto;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    background-color: black;
+    color: chartreuse;
+    font-family: 'Roboto Mono', monospace;
+}
