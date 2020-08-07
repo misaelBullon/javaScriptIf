@@ -17,7 +17,7 @@
 #botonRojo{
     background-color: red;
 }
-#h{
+#h, #f{
     height: auto;
     width: auto;
     margin: 5px;
@@ -26,4 +26,8 @@
     background-color: black;
     color: chartreuse;
     font-family: 'Roboto Mono', monospace;
+    font-weight: bolder;
+}
+#f{
+    font-size: xx-large;
 }

@@ -54,9 +54,48 @@ let select = document.querySelector('select'); //almaceno select en una variable
         default:
             console.log("Something went wrong");
     }
-    
-    var ho = new Date();
-    let h1 = document.getElementById('hora');
-    console.log(ho.getHours() + ":" + ho.getMinutes());
 
-    h1.textContent = `${ho.getHours()}` + ':' + `${ho.getMinutes()}`;
+
+    //Funcion de reloj
+    
+    function reloj(){
+        let h1 = document.getElementById('hora');
+        let p = document.getElementById('fecha');
+        var ho = new Date();
+        var hora = ho.getHours();
+        var min = ho.getMinutes();
+        var sec = ho.getSeconds();
+        var dia = ho.getDate();
+        var mes = ho.getMonth();
+        var año = ho.getFullYear();
+
+        var newMes = mes + 1;
+        var newMin = checkTime(min);  //Si los minutos y segundos son menores a 10 agrego el 0
+        var newSec = checkTime(sec);
+
+       
+        p.textContent = dia + '/' + newMes + '/' + año;
+      
+        h1.textContent = hora + ':' + newMin + ':' + newSec;
+
+        var time = setTimeout(function(){ reloj() }, 500);
+    }
+
+    //Agrego el 0 en caso de que los minutos sean mayor a 10
+    function checkTime(t){
+        if(t < 10){
+            t = '0' + t;
+        }
+        return t;
+    }
+    
+    reloj();
+ 
+ 
+    //Mensaje de confirmacion
+   var mensaje = confirm('Aceptar o denegar');
+   if(mensaje){
+       alert('Gracias por aceptar');
+   }else{
+       alert('Hasta la proxima');
+   }
