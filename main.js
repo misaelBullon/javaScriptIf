@@ -91,7 +91,7 @@ let select = document.querySelector('select'); //almaceno select en una variable
     
     reloj();
  
- 
+/*
     //Mensaje de confirmacion
    var mensaje = confirm('Aceptar o denegar');
    if(mensaje){
@@ -99,3 +99,46 @@ let select = document.querySelector('select'); //almaceno select en una variable
    }else{
        alert('Hasta la proxima');
    }
+
+*/
+
+   //Practica de thor project
+
+//Suma
+var num1 = 10;
+var num2 = 15;
+
+function add7(num1){
+    let result = num + 7;
+    console.log('El resultado es ' + result);
+}
+//Multiplicacion
+function multiply(num1, num2){
+    let result = num1*num2;
+    console.log('El resultado de la multiplicacion es' + result);
+}
+/*
+//Primera letra mayuscula
+function mayuscula(){
+    var capital = prompt('Ingrese una palabra');
+
+    if(capital.toUpperCase()){
+        alert(capital[0].toUpperCase() + capital.slice(1).toLowerCase());
+    }else if(capital.toLowerCase()){
+        alert(capital[0].toUpperCase() + capital.slice(1).toLowerCase());
+    }
+    
+}
+mayuscula();
+*/
+
+
+//Ultima letra
+
+function ultima(){
+ var cadena = prompt('Ingrese una cadena');
+ var l = cadena.length;
+ var newLength = l-1;
+ alert(cadena[newLength]);
+}
+ultima();
